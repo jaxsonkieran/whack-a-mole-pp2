@@ -1,9 +1,107 @@
-body {
-    font-family: "Electrolize", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    background: url('../images/mario-background.jpg');
-    background-size: cover no-repeat;
-  }
 
+/* 
+Targets all elements and includes padding and border
+in elements total width and height */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Electrolize", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+  text-align: center;
+}
+
+.wrapper {
+  background: url(../images/mario-background.jpg);
+  background-size: cover no-repeat;
+  background-color: red;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+h1, 
+h2 {
+  font-size: 7vh;
+  color: #FBD000;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#about-btn {
+  padding: 10px;
+  background-color: #049CD8;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#about-btn:hover {
+  background-color: #FBD000;
+  color: #049CD8;
+}
+
+/* The About Game Modal Box */
+.modal {
+  /* hidden by default */
+  display: none;
+  position: fixed;
+  /* sit on top */
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* Enable scroll */
+  overflow: auto;
+  /* Black with opacity */
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* About Game content */
+.modal-content {
+  background-color: #43B047;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #FBD000;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #E52521;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.info-container {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-around;
+  font-size: 2vh;
+}
+
+.info-container p,
+.modal-content ul,
+.info-container button {
+  padding: 10px;
+}
