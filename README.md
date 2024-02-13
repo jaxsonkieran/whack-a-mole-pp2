@@ -45,6 +45,7 @@ INSERT IMAGE HERE
 * The font used in the project is Electrolize from [Google Fonts](https://www.fonts.google.com). It was chosen because of it's retro/game look and feel.
 
 #### Background Image
+* The background image was taken from a free wallpaper download of [Mario Images](https://mrwallpaper.com/wallpapers/download-mario-wallpaper-nggsnupoh0ha4car.html)
 
 
 #### Sprites
