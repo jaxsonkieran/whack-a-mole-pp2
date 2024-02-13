@@ -1,4 +1,4 @@
-# Whack-a-Mole
+# Whack-a-Mario
 View the live site here
 
 # Table of Contents
@@ -20,7 +20,7 @@ View the live site here
 
 # UX
 ### Project Goals
-Whack-a-Mole is a game designed to give the user a fun, intuitive and interesting game with different levels of difficulty depending on the level the user selects at the beginning.
+Whack-a-Mario is a game designed to give the user a fun, intuitive and interesting game with different levels of difficulty depending on the level the user selects at the beginning.
 
 ### User Goals
 * Easy to understand and play as soon as the user lands on the game site
@@ -73,6 +73,22 @@ This project was built using HTML5, CSS3 and Javascript.
 
 
 # Features
+* There will be two buttons located at the top of the page, an About and Play Game.
+1. As this game was designed to be on one page it was decided to use an About Button for the user to interact with if they need to understand how to play the game.
+2. About Modal Box
+* On click, the modal box opens with instructions on how to play. The background darkened to cover the game area. 
+* The instructions are fun, small and easy to understand. 
+* The X to close the modal box changes colour on hover and located on the top right of the box.
+3. Play Game Button
+* This button is also located at the top of the page, alongside the about button.
+* This will launch the game into action.
+* The button is deactivated during in-game play and reactivated once finished.
+4. Timer
+* The timer is displayed as Time Left:, it will count down from 60 seconds. 
+5. Scoreboard
+* The score is displayed at the top of the game area. 
+* Successful hits of the super marios will move the score up 1 point. At the end of the game, you will see your final score.
+
 
 
 
