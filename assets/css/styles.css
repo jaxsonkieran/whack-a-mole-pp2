@@ -27,9 +27,14 @@ body {
   flex-direction: column;
 }
 
-h1, 
-h2 {
+h1 {
   font-size: 7vh;
+  color: #FBD000;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+h2 {
+  font-size: 4vh;
   color: #FBD000;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
@@ -39,14 +44,16 @@ h2 {
   justify-content: space-evenly;
 }
 
-#about-btn {
+#about-btn,
+#playButton {
   padding: 10px;
   background-color: #049CD8;
   color: #fff;
   border-radius: 5px;
 }
 
-#about-btn:hover {
+#about-btn:hover,
+#playButton:hover {
   background-color: #FBD000;
   color: #049CD8;
 }
@@ -104,4 +111,28 @@ h2 {
 .modal-content ul,
 .info-container button {
   padding: 10px;
+}
+
+/* Modal Box Instructions */
+li {
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+}
+
+#time-left,
+#score {
+  display: block;
+}
+
+
+/* Mario container */
+.game {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 70%;
+  flex-shrink: 0;
+  padding-bottom: 20px;
 }
