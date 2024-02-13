@@ -7,8 +7,3 @@ body {
     background-size: cover no-repeat;
   }
 
-  #board {
-    width: 540px;
-    height: 540px;
-    background-color: yellow;
-  }

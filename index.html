@@ -24,12 +24,35 @@
         <!-- Header Section -->
         <header>
             <h1>Whack A Mole</h1>
+ <!-- about game button & modal -->
+        <div class="info-container">
+            <section class="game-controls">
+                <button id="about-btn" type="button" aria-label="Click to read game instructions">About Game</button>
+                <div id="gameinfomodal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h2>Quick! Super Marios are trying to escape and take over the world!</h2>
+                      <ul>
+                        <li>Use your mouse to click/hti the Super Marios!</li>
+                        <li>On mobile tap/hit the Super Marios!</li>
+                        <li>Don't let the Super Marios escape before the time is up!</li>
+                        <li>You score 1 point for defending the world, hitting the Super Marios</li>
+                        <li>You have 60 seconds to save the world</li>
+                    </ul>
+                    </div>
+                  
+                  </div>
+            </section>
+        </div>
+
             <div class="score">Your Score:<span class="current-score"></span></div>
             <div class="timer">Time Left:</div>
         </header>
-        
+       
         <!-- 3x3 Board -->
-        <div id="board"></div>
+  
 
 
 
