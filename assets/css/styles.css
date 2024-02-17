@@ -126,13 +126,50 @@ li {
 }
 
 
-/* Mario container */
+/* the game container */
 .game {
   display: flex;
+  align-self: center;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  top: 70%;
+  top: 50%;
   flex-shrink: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  /* push game section to the top */
+  z-index: 500;
 }
+
+.mario {
+  background: url('../images/mario-1998595_640.png') bottom center no-repeat;
+  position: absolute;
+  background-size: 50%;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.hole {
+  /* make the holes evenly proportioned https://css-tricks.com & also JavaScrip 30*/
+  flex: 1 0 33.3%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.hole:after {
+  display: block;
+  content: '';
+  background: url('../images/mario-hole.png') bottom center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+/* to make the mole appear up */
+.hole.up .mole {
+  top: 0;
+}
+
